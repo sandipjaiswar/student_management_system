@@ -6,7 +6,7 @@ function Students() {
 
     const deleteStudent = async (id) => {
         await fetch(
-            `http://localhost:3000/api/students/${id}`,
+            `/api/students/${id}`,
             {
                 method: "DELETE",
             }
@@ -20,7 +20,7 @@ function Students() {
     const fetchStudents = async () => {
         try {
             const response = await fetch(
-                "http://localhost:3000/api/students"
+                "/api/students"
             );
 
             const data = await response.json();
